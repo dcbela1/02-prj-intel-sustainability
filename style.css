@@ -158,16 +158,3 @@ body{
     margin-bottom: 20px;
   }
 }
-
-/* (Optional) Print-friendly */
-@media print{
-  .hero, .caption { display:none !important; }
-  body{ background:#fff; }
-  .timeline-container{
-    display:block; overflow:visible; padding:0; gap:0;
-  }
-  .timeline-card{
-    page-break-inside: avoid; margin: 0 0 14px 0; height:auto;
-    box-shadow: none; border: 1px solid #e5e7eb;
-  }
-} 
