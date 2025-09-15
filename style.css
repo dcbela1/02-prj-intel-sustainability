@@ -82,7 +82,7 @@ body{
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
   scroll-snap-align: start;
-  border-radius:25px;
+  border-radius:10px;
   outline: none;
 }
 .timeline-card h2{
