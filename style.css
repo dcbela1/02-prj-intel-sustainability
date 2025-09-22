@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif; 
   background-color: #f5f5f5;
   color: #333;
   line-height: 1.6;
@@ -30,7 +30,7 @@ body{
   font-size: 52px;
   font-weight: 700;
   line-height: 1.2;
-  font-family:'Roboto', serif';
+  font-family: 'Roboto', Arial, sans-serif; 
   text-transform: uppercase;
   margin-bottom: 16px;
 }
@@ -49,6 +49,7 @@ body{
 .caption{
   font-size: 18px;
   margin-top: 20px;
+  margin-bottom:50px;
   text-align: center;
 }
 
@@ -56,11 +57,10 @@ body{
 .timeline-container{
   max-width: 1090px;
   margin: 0 auto;
-  padding-top: 50px;
   display: flex;
   overflow-x: auto;
   gap: 24px;
-  padding: 30px 12px;
+  padding: 50px 12px;
   scroll-snap-type: x mandatory;
 }
 .timeline-container::-webkit-scrollbar{ height: 12px; }
@@ -127,6 +127,8 @@ body{
 .timeline-card:hover p{
   display: block;
   opacity: 1;
+  max-height:400px;
+  margin-bottom:0px;
 }
 
 /* Keyboard & touch accessibility: show overlay on focus */
@@ -137,6 +139,14 @@ body{
 }
 .timeline-card:focus{
   box-shadow: 0 0 0 3px rgba(0,153,219,.35), 0 4px 12px rgba(0,0,0,.3);
+}
+.btn.btn-outline-secondary {
+ background-color:#9cabbc; 
+  color: #ffffff;
+ border: 2px solid #8995a4;
+}
+.btn.btn-outline-secondary:hover {
+ background-color:#8995a4; 
 }
 
 /* Responsive: stack vertically on small screens */
