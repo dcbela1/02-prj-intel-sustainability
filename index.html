@@ -1,12 +1,15 @@
 <html lang="en">
-<head>
+<head> 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link id="bs-ltr" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link id="bs-rtl" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" disabled>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <title>Intel: Sustainability Through the Ages</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <!-- Hero / Header -->
   <header class="hero">
     <div class="hero-content">
@@ -21,59 +24,65 @@
       <p class="caption">Scroll to view timeline • Hover or tap cards to learn more</p>
     </div>
   </header>
-
+   <!-- Toggle Buttons -->
+<div class="container my-3">
+  <div class="d-flex gap-2 justify-content-end">
+    <button id="btn-ltr" class="btn btn-outline-primary btn-sm">LTR</button>
+    <button id="btn-rtl" class="btn btn-outline-primary btn-sm">RTL</button>
+  </div>
+</div>
   <!-- Timeline -->
-  <section class="timeline-container" aria-label="Intel sustainability timeline" role="list">
+  <section class="timeline-container" dir="ltr" aria-label="Intel sustainability timeline" role="list">
 
-    <!-- CARD 1 -->
+    <!-- Timeline Image 1 -->
     <div class="timeline-card" role="listitem" tabindex="0">
       <h2>1968</h2>
       <h3>Intel Founded</h3>
-      <img class="card-image" src="img/1.jpg" alt="Robert Noyce and Gordon Moore early Intel era"/>
+      <img class="card-image" src="img/1.jpg" alt="Robert Noyce and Gordon Moore early Intel era" loading="lazy"/>
       <p>
         Robert Noyce and Gordon Moore rename NM Electronics to Intel Corporation,
         laying the foundation for decades of technological innovation.
       </p>
     </div>
 
-    <!-- CARD 2 -->
+   <!-- Timeline Image 2 -->
     <div class="timeline-card" role="listitem" tabindex="0">
       <h2>1971</h2>
       <h3>First Microprocessor</h3>
-      <img class="card-image" src="img/2.jpg" alt="Intel 4004 microprocessor"/>
+      <img class="card-image" src="img/2.jpg" alt="Intel 4004 microprocessor" loading="lazy"/>
       <p>
         Intel debuts the 4004, the first commercial microprocessor—igniting the
         microprocessor revolution and propelling the future of computing.
       </p>
     </div>
 
-    <!-- CARD 3 -->
+   <!-- Timeline Image 3 -->
     <div class="timeline-card" role="listitem" tabindex="0">
       <h2>1978</h2>
       <h3>8086 Processor</h3>
-      <img class="card-image" src="img/3.jpg" alt="Intel 8086 chip close-up"/>
+      <img class="card-image" src="img/3.jpg" alt="Intel 8086 chip close-up" loading="lazy"/>
       <p>
         Launch of the 8086 processor, establishing the x86 architecture that
         powers countless PCs and servers in the modern era.
       </p>
     </div>
 
-    <!-- CARD 4 -->
+   <!-- Timeline Image 4 -->
     <div class="timeline-card" role="listitem" tabindex="0">
       <h2>1985</h2>
       <h3>386 Processor</h3>
-      <img class="card-image" src="img/4.jpg" alt="Intel 386 processor"/>
+      <img class="card-image" src="img/4.jpg" alt="Intel 386 processor" loading="lazy"/>
       <p>
         Intel introduces the 386 with 32-bit architecture, ushering in a new
         era of performance and multitasking for personal computers.
       </p>
     </div>
 
-    <!-- CARD 5 -->
+    <!-- Timeline Image 5 -->
     <div class="timeline-card" role="listitem" tabindex="0">
       <h2>2006</h2>
       <h3>Peak GHG Emissions</h3>
-      <img class="card-image" src="img/5.png" alt="Factory emissions with abatement equipment"/>
+      <img class="card-image" src="img/5.png" alt="Factory emissions with abatement equipment" loading="lazy"/>
       <p>
         Marks Intel’s highest annual operational GHG emissions. Subsequent years
         bring investment in abatement, renewables, and efficient manufacturing
@@ -81,44 +90,44 @@
       </p>
     </div>
 
-    <!-- CARD 6 -->
+   <!-- Timeline Image 6 -->
     <div class="timeline-card" role="listitem" tabindex="0">
       <h2>2020</h2>
       <h3>RISE Strategy</h3>
-      <img class="card-image" src="img/6.jpg" alt="Graphic of Responsible, Inclusive, Sustainable, Enabling"/>
+      <img class="card-image" src="img/6.jpg" alt="Graphic of Responsible, Inclusive, Sustainable, Enabling" loading="lazy"/>
       <p>
         Intel launches RISE and 2030 goals, driving progress on climate action,
         water stewardship, and waste reduction across the value chain.
       </p>
     </div>
 
-    <!-- CARD 7 -->
+   <!-- Timeline Image 7 -->
     <div class="timeline-card" role="listitem" tabindex="0">
       <h2>2022</h2>
       <h3>Net-Zero by 2040</h3>
-      <img class="card-image" src="img/7.jpeg" alt="Net-zero target with clean energy imagery"/>
+      <img class="card-image" src="img/7.jpeg" alt="Net-zero target with clean energy imagery" loading="lazy"/>
       <p>
         Commitment to achieve net-zero Scope 1 & 2 GHG emissions across global
         operations by 2040, building on years of environmental initiatives.
       </p>
     </div>
 
-    <!-- CARD 8 -->
+     <!-- Timeline Image 8 -->
     <div class="timeline-card" role="listitem" tabindex="0">
       <h2>2023</h2>
       <h3>Renewable Electricity</h3>
-      <img class="card-image" src="img/8.jpeg" alt="Solar and wind powering a high-tech facility"/>
+      <img class="card-image" src="img/8.jpeg" alt="Solar and wind powering a high-tech facility" loading="lazy"/>
       <p>
         Achieves ~99% renewable electricity usage worldwide—dramatically lowering
         operational emissions and supporting clean energy markets.
       </p>
     </div>
 
-    <!-- CARD 9 -->
+   <!-- Timeline Image 9 -->
     <div class="timeline-card" role="listitem" tabindex="0">
       <h2>2024</h2>
       <h3>Sustainability Summit</h3>
-      <img class="card-image" src="img/9.jpeg" alt="Conference with industry leaders discussing sustainability"/>
+      <img class="card-image" src="img/9.jpeg" alt="Conference with industry leaders discussing sustainability" loading="lazy"/>
       <p>
         Intel hosts its first Sustainability Summit, bringing suppliers, officials,
         and industry leaders together to collaborate on greener semiconductor
@@ -127,8 +136,182 @@
     </div>
 
   </section>
-
+   <!-- Tip Under the Scrollbar -->
   <p class="caption">Tip: On mobile, tap a card to reveal details.</p>
+  <section id="intel-info" class="py-5 bg-light">
+<!-- 3 Column -->
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Intel Sustainability Focus</h2>
+      <p class="text-muted mb-0">Key areas we’re investing in across products and operations</p>
+    </div>
 
+    <div class="row g-4">
+      <!-- Column 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="h-100 p-4 bg-white border rounded-3">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-droplet-half fs-2 me-3"></i>
+            <h3 class="h5 m-0">Water Stewardship</h3>
+          </div>
+          <p class="mb-3">Restoring water in stressed regions and improving fab water efficiency through treatment and reuse.</p>
+          <a class="link-primary fw-semibold" href="#water">Learn more</a>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="h-100 p-4 bg-white border rounded-3">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-lightning-charge fs-2 me-3"></i>
+            <h3 class="h5 m-0">Clean Energy</h3>
+          </div>
+          <p class="mb-3">Scaling renewable electricity globally and driving performance-per-watt across data center to edge.</p>
+          <a class="link-primary fw-semibold" href="#energy">Learn more</a>
+        </div>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="h-100 p-4 bg-white border rounded-3">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-recycle fs-2 me-3"></i>
+            <h3 class="h5 m-0">Waste & Materials</h3>
+          </div>
+          <p class="mb-3">Reducing waste to landfill and adopting safer chemicals and circular-material strategies.</p>
+          <a class="link-primary fw-semibold" href="#materials">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<!-- Newsletter -->
+ <section id="subscribe" class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="p-4 p-md-5 border rounded-3 bg-white">
+          <h2 class="h4 fw-bold mb-3 text-center">Subscribe to Intel’s Sustainability Newsletter</h2>
+          <form novalidate>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input
+  type="email"
+  class="form-control"
+  id="email"
+  name="email"
+  required
+  aria-describedby="emailHelp"
+  placeholder="Enter Email"
+  autocomplete="email"
+  inputmode="email"
+  autocapitalize="off"
+/>
+              <div id="emailHelp" class="form-text">We’ll only use this to send updates.</div>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+
+            <div class="d-grid d-sm-flex gap-2">
+              <button type="submit" class="btn btn-primary">
+                <i class="bi bi-envelope-paper me-2"></i>Subscribe
+              </button>
+              <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#termsModal">
+                Terms
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+  <!-- Website Footer --> 
+  <footer class="py-4 bg-light border-top mt-5">
+  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+    <div class="text-muted">
+      © 2025 Intel. <a class="link-secondary ms-2" href="https://www.google.com">Privacy</a>
+      <a class="link-secondary ms-2" href="https://www.google.com">Terms</a>
+      <a class="link-secondary ms-2" href="https://www.google.com">Contact</a>
+    </div>
+    <div class="d-flex align-items-center gap-3">
+      <a class="text-secondary" aria-label="Twitter" href="https://www.x.com/"><i class="bi bi-twitter-x fs-5"></i></a>
+      <a class="text-secondary" aria-label="Facebook" href="https://www.facebook.com/"><i class="bi bi-facebook fs-5"></i></a>
+      <a class="text-secondary" aria-label="Instagram" href="https://www.instagram.com/"><i class="bi bi-instagram fs-5"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- LTR/RTL Toggle -->  
+<script>
+  const htmlEl = document.documentElement;
+  const ltrLink = document.getElementById('bs-ltr');
+  const rtlLink = document.getElementById('bs-rtl');
+
+  function applyDir(dir) {
+    htmlEl.setAttribute('dir', dir);
+    const isRTL = dir === 'rtl';
+    rtlLink.disabled = !isRTL;
+    ltrLink.disabled = isRTL;
+    // Use logical alignment utilities that respect dir (ms-*, me-*)
+  }
+
+  document.getElementById('btn-ltr')?.addEventListener('click', () => applyDir('ltr'));
+  document.getElementById('btn-rtl')?.addEventListener('click', () => applyDir('rtl'));
+
+  // Default to LTR on load
+  applyDir('ltr');
+</script>
+  
+ <!-- Subscription Form --> 
+  <script>
+  (function () {
+    const form = document.querySelector('#subscribe form');
+    form?.addEventListener('submit', function (e) {
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        form.querySelector('#email').classList.add('is-invalid');
+      }
+    });
+    form?.querySelector('#email')?.addEventListener('input', function () {
+      this.classList.remove('is-invalid');
+    });
+  })();
+</script>
+   <!-- Languages Right to Left --> 
+<script>
+  const RTL_LANGS = new Set(['ar','he','fa','ur','ps','ku','dv','syr']);
+
+  function syncDirToLang() {
+    const lang = (document.documentElement.lang || '').trim().toLowerCase().slice(0,2);
+    const dir = RTL_LANGS.has(lang) ? 'rtl' : 'ltr';
+    // Reuse the same function from earlier:
+    if (typeof applyDir === 'function') applyDir(dir);
+    else document.documentElement.setAttribute('dir', dir);
+  }
+
+  // On load + whenever <html lang> changes (e.g., Google Translate)
+  const obs = new MutationObserver(syncDirToLang);
+  obs.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+  window.addEventListener('DOMContentLoaded', syncDirToLang);
+</script> 
+<div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="termsLabel" class="modal-title">Newsletter Terms</h5>
+        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>By subscribing you agree to receive sustainability updates. You may unsubscribe anytime.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
